@@ -21,10 +21,14 @@ else
 {
 return (1);
 }
+/**
+ * is_prime_number - says if an integer is a prime number 
+ * @n: number to be checked
+ * @i: iterator
+ */
 int is_prime_number(int n)
 {
 if (n <= 1)
 return (0);
-else
-return (helperFunction(n, 2));
+return (helperFunction(n, n-2));
 }
