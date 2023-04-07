@@ -22,5 +22,5 @@ int is_prime_number(int n)
 {
 if (n <= 1)
 return (0);
-return (helperFunction(n, n-2));
+return (helperFunction(n, n-1));
 }
