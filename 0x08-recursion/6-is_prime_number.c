@@ -4,23 +4,15 @@
  * @n: number being checked
  * @i: possible factor of the number
  */
-int helperFunction(int n, int i)
+int helperFunction(int num, int i)
 {
-if (i < n)
-{
-if (n % i == 0)
-{
+if (i > 0 && num % i == 0)
 return (0);
-}
-else
-{
-return (helperFunction(n, i+1));
-}
-}
-else
-{
+return (helperFunction(num, i-1));
+if (i == 1)
 return (1);
 }
+
 /**
  * is_prime_number - says if an integer is a prime number 
  * @n: number to be checked
