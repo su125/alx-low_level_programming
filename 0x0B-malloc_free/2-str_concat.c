@@ -20,7 +20,7 @@ while (s1[i] != '\0')
 i++;
 while (s2[j] != '\0')
 j++;
-ctn[i] = malloc(sizeof(char) * (i + j + 1));
+ctn = malloc(sizeof(char) * (i + j + 1));
 if (ctn == NULL)
 return (NULL);
 while (s1[i] != '\0')
