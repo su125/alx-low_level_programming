@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * string_nconcat -  concatenates two strings
+ * *string_nconcat -  concatenates two strings
  * @s1: string to append
  * @s2: string to concatenate from
  * @n: number of bytes from s2 to concatenate to s1
@@ -19,7 +19,7 @@ if (n < len2)
 s = malloc(sizeof(char) * (len1 + n + 1));
 else
 s = malloc(sizeof(char) * (len1 + len2 + 1));
-if (s)
+if (!s)
 return (NULL);
 while (i < len1)
 {
